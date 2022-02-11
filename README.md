@@ -1,10 +1,8 @@
-# mdn-minimalist
+# minimalist
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9b97df5e-40a6-47b0-9c73-5a1086c3e2a6/deploy-status)](https://app.netlify.com/sites/mdn-minimalist/deploys)
+> NOTE: This for is now the canonical repository for `minimalist`
 
-> NOTE: Work on minimalist is temporarily on hold. Please check back later.
-
-The base Sass for Mozilla Developer based projects and products.
+A base collection of atoms and molecules written in https://sass-lang.com/
 
 ## Testing changes locally
 
