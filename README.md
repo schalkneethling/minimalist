@@ -1,6 +1,6 @@
 # minimalist
 
-> NOTE: This for is now the canonical repository for `minimalist`
+> NOTE: This is now the canonical repository for `minimalist`
 
 A base collection of atoms and molecules written in https://sass-lang.com/
 
