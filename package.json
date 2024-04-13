@@ -44,7 +44,7 @@
   "devDependencies": {
     "@mdn/dinocons": "^0.5.5",
     "bundlesize": "^0.18.0",
-    "css-loader": "^6.1.0",
+    "css-loader": "^7.1.1",
     "file-loader": "^6.1.0",
     "http-server": "^14.0.0",
     "husky": "^7.0.0",
