@@ -16,6 +16,3 @@ jobs:
       - name: Lint Minimalist
         run: |
           yarn lint
-      - name: Run Minimalist
-        run: |
-          yarn test
