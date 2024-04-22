@@ -2,7 +2,6 @@
   "extends": [
     "stylelint-config-recommended",
     "stylelint-config-sass-guidelines",
-    "stylelint-a11y/recommended",
     "stylelint-prettier/recommended"
   ],
   "plugins": ["stylelint-scss"],
