@@ -71,7 +71,3 @@ public
 
 # webpack build js
 dist/css/main.js
-
-# styleguide build assets
-styleguide/assets/minimalist/
-styleguide/resources/
