@@ -4,7 +4,6 @@ css
 dist
 pages
 test
-styleguide
 .prettierignore
 .prettierrc
 .stylelintrc.json
