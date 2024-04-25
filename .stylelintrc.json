@@ -1,10 +1,5 @@
 {
-  "extends": [
-    "stylelint-config-recommended",
-    "stylelint-config-sass-guidelines",
-    "stylelint-prettier/recommended"
-  ],
-  "plugins": ["stylelint-scss"],
+  "extends": ["stylelint-config-recommended", "stylelint-prettier/recommended"],
   "rules": {
     "max-nesting-depth": 3,
     "declaration-no-important": true,
