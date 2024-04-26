@@ -28,7 +28,7 @@
   "devDependencies": {
     "bundlesize": "^0.18.2",
     "http-server": "^14.1.1",
-    "prettier": "^2.0.4",
+    "prettier": "^3.2.5",
     "pretty-quick": "^3.0.0",
     "stylelint": "^13.2.1",
     "stylelint-config-prettier": "^9.0.5",
