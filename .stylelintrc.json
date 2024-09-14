@@ -1,14 +1,3 @@
 {
-  "extends": ["stylelint-config-recommended", "stylelint-prettier/recommended"],
-  "rules": {
-    "max-nesting-depth": 3,
-    "declaration-no-important": true,
-    "font-weight-notation": "named-where-possible",
-    "selector-no-qualifying-type": [
-      true,
-      {
-        "ignore": ["class"]
-      }
-    ]
-  }
+  "extends": ["stylelint-config-recommended", "stylelint-prettier/recommended"]
 }

@@ -1,0 +1,81 @@
+.heading-display,
+.heading-xxl,
+.heading-xl,
+.heading-large,
+.heading-medium,
+.heading-small-mediium,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--typography-heading-family);
+  line-height: var(--typography-heading-line-height);
+}
+
+.text-medium,
+.text-small-medium,
+body {
+  font-family: var(--typography-body-family);
+  line-height: var(--typography-document-line-height);
+}
+
+.heading-display {
+  font-size: var(--typography-size-display);
+}
+
+.heading-xxl,
+h1 {
+  font-size: var(--typography-size-xxl);
+}
+
+.heading-xl,
+h2 {
+  font-size: var(--typography-size-xl);
+}
+
+.heading-large,
+h3 {
+  font-size: var(--typography-size-large);
+}
+
+.heading-medium,
+h4 {
+  font-size: var(--typography-size-medium);
+}
+
+.heading-small-medium,
+h5 {
+  font-size: var(--typography-size-small-medium);
+}
+
+h6 {
+  font-size: var(--typography-size-default);
+}
+
+.text-medium {
+  font-size: var(--typography-size-medium);
+}
+
+.text-small-medium {
+  font-size: var(--typography-size-small-medium);
+}
+
+body {
+  font-size: 100%; /* Respect user choice */
+}
+
+.text-small {
+  font-size: var(--typography-size-small);
+}
+
+.tiny-small {
+  font-size: var(--typography-size-tiny);
+}
+
+code {
+  font-family: var(--typography-code-family);
+  font-size: var(--typography-size-default);
+  line-height: var(--typography-code-example-line-height);
+}

@@ -1,0 +1,32 @@
+figure {
+  border: var(--figure-border);
+  display: grid;
+  margin: 0;
+  margin-block: var(--size-16);
+  max-width: max-content;
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    background-color: var(--figcaption-background-color);
+    color: var(--figcaption-foreground-color);
+    padding: var(--figcaption-spacing);
+  }
+}
+
+figure.overlap {
+  grid-template: 1fr / 1fr;
+
+  img,
+  figcaption {
+    grid-area: 1 / -1;
+  }
+
+  figcaption {
+    background-color: var(--figcaption-overlap-background-color);
+    color: var(--figcaption-overlap-foreground-color);
+    place-self: end;
+  }
+}

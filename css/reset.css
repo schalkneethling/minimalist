@@ -1,0 +1,97 @@
+/**
+ * A combination of the following resets:
+ * https://piccalil.li/blog/a-more-modern-css-reset/
+ * https://www.joshwcomeau.com/css/custom-css-reset/
+ */
+
+/* Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+/* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+/* https://caniuse.com/text-size-adjust */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Set core body defaults */
+body {
+  line-height: var(--typography-document-line-height);
+  min-block-size: 100vh;
+  font-size: 100%; /* Respect user choice */
+
+  /* If supported, inherits the iOS font settings 
+     More at https://frontendmasters.com/blog/letting-ios-text-size-setting-affect-font-size-on-the-web/ */
+  font: -apple-system-body;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering#browser_compatibility */
+  text-rendering: optimizeLegibility;
+}
+
+summary {
+  cursor: pointer;
+}
+
+/* Set shorter line heights on interactive elements */
+button,
+input,
+label {
+  line-height: var(--typography-iactive-line-height);
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-block-size: 10em;
+}
+
+/* Balance text wrapping on headings */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap#balance */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  block-size: auto;
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
