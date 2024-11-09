@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist - A minimal pure CSS starter library for most web projects</title>
+    <link rel="stylesheet" type="text/css" href="css/minimalist.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" media="screen" />
+</head>
+
+<body>
+
+</body>
+<header class="page-header">
+    <h1><a href="/">Minimalist</a></h1>
+</header>
+<main id="main-content">
+    <p class="text-medium">A minimal pure CSS starter library for most web projects.</p>
+
+    <h2>Typography</h2>
+    <p>The typography scale is based on a 1.250 (Major third) scale for viewports smaller than 1024 pixels and 1.333
+        (Perfect fourth) scale for viewport sizes above 1023 pixels. For the font families, Minimalist uses a serif
+        family for headings and a sans-serif family for all other copy. The only exception is for code which uses a
+        monospaced font.</p>
+    <p>The font stack used is based in typography commonly found preinstalled on most operating systems with appropriate
+        fallbacks. To learn more about the font stack, please visit the <a href="https://systemfontstack.com">system
+            font stack website</a>.</p>
+
+    <details>
+        <summary><span class="heading-large">Headings</span></summary>
+        <ul class="reset-list typography-example">
+            <li class="heading-display">
+                <span class="font-description-label">
+                    <span class="visually-hidden">Custom property: </span><code>--typography-size-display</code>
+                </span>
+                The quick brown fox jumps over the lazy dog.
+            </li>
+            <li class="heading-xxl">
+                <span class="font-description-label">
+                    <span class="visually-hidden">Custom property: </span><code>--typography-size-xxl</code>
+                </span>
+                The quick brown fox jumps over the lazy dog.
+            </li>
+            <li class="heading-xl">
+                <span class="font-description-label">
+                    <span class="visually-hidden">Custom property: </span><code>--typography-size-xl</code>
+                </span>
+                The quick brown fox jumps over the lazy dog.
+            </li>
+            <li class="heading-large">
+                <span class="font-description-label">
+                    <span class="visually-hidden">Custom property: </span><code>--typography-size-large</code>
+                </span>
+                The quick brown fox jumps over the lazy dog.
+            </li>
+            <li class="heading-medium">
+                <span class="font-description-label">
+                    <span class="visually-hidden">Custom property: </span><code>--typography-size-medium</code>
+                </span>
+                The quick brown fox jumps over the lazy dog.
+            </li>
+            <li class="heading-small-medium">
+                <span class="font-description-label">
+                    <span class="visually-hidden">Custom property: </span><code>--typography-size-small-medium</code>
+                </span>
+                The quick brown fox jumps over the lazy dog.
+            </li>
+        </ul>
+
+        <table class="custom-properties">
+            <thead>
+                <tr>
+                    <th scope="col">Custom property</th>
+                    <th scope="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145" />
+                        </svg> Large viewport
+                    </th>
+                    <th scope="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16" aria-hidden="true">
+                            <path
+                                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                        </svg> Small to medium viewport
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>--typography-size-display</code></td>
+                    <td>5.61rem</td>
+                    <td>3.815rem</td>
+                </tr>
+                <tr>
+                    <td><code>--typography-size-xxl</code></td>
+                    <td>4.209rem</td>
+                    <td>3.052rem</td>
+                </tr>
+                <tr>
+                    <td><code>--typography-size-xl</code></td>
+                    <td>3.157rem</td>
+                    <td>2.441rem</td>
+                </tr>
+                <tr>
+                    <td><code>--typography-size-large</code></td>
+                    <td>2.369rem</td>
+                    <td>1.953rem</td>
+                </tr>
+                <tr>
+                    <td><code>--typography-size-medium</code></td>
+                    <td>1.777rem</td>
+                    <td>1.563rem</td>
+                </tr>
+                <tr>
+                    <td><code>--typography-size-small-medium</code></td>
+                    <td>1.333rem</td>
+                    <td>1.25rem</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+
+    <details>
+        <summary>General copy</summary>
+        <ul class="reset-list typography-example">
+            <li>
+                <p class="text-medium">The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor
+                    jugs.
+                    A wizard's job is to vex chumps quickly in fog. Sylvia, fix the chief's big quiz. Jack quietly moved
+                    up
+                    front and seized the big ball of wax. 1234567890 & @ $ % * ( ) - + = / \ ! ? , . : ; ' " æ œ é ü ç
+                    ñ.
+                    The sly cat's light pink coat was fluffy, and it dazzled in the warm sun.</p>
+            </li>
+            <li>
+                <p class="text-small-medium">The quick brown fox jumps over the lazy dog. Pack my box with five dozen
+                    liquor
+                    jugs. A wizard's job is to vex chumps quickly in fog. Sylvia, fix the chief's big quiz. Jack quietly
+                    moved up front and seized the big ball of wax. 1234567890 & @ $ % * ( ) - + = / \ ! ? , . : ; ' " æ
+                    œ é
+                    ü ç ñ. The sly cat's light pink coat was fluffy, and it dazzled in the warm sun.</p>
+            </li>
+            <li>
+                <p>The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs. A wizard's job
+                    is
+                    to vex chumps quickly in fog. Sylvia, fix the chief's big quiz. Jack quietly moved up front and
+                    seized
+                    the big ball of wax. 1234567890 & @ $ % * ( ) - + = / \ ! ? , . : ; ' " æ œ é ü ç ñ. The sly cat's
+                    light
+                    pink coat was fluffy, and it dazzled in the warm sun.</p>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Code</summary>
+        <pre>
+    <code>
+        function helloWorld() {
+            console.log('Hello, World!');
+        }
+    </code>
+        </pre>
+    </details>
+
+    <details>
+        <summary>Blockquote</summary>
+        <blockquote cite="https://ellenlupton.com/White-Space">
+            <p>Empty. Blank. Void. Wasted. That’s how most people see the parts of a web page or magazine spread where
+                nothing is displayed or printed. Graphic designers, however, call such fields of unclaimed territory
+                “white
+                space.” These open areas are as sacred to us as a fresh bar of soap or a fifteen-minute intermission.
+                How
+                did we come to cherish the abyss, and does it have a future in today’s digital world? - <a
+                    href="https://ellenlupton.com/White-Space">Read the full essay by Ellen Lupton</a>.</p>
+        </blockquote>
+        <p>The same quote but with the <code>readable-line-length</code> utility class applied which constrains the
+            number
+            of characters per line to 85 characters.</p>
+        <blockquote class="readable-line-length" cite="https://ellenlupton.com/White-Space">
+            <p>Empty. Blank. Void. Wasted. That’s how most people see the parts of a web page or magazine spread where
+                nothing is displayed or printed. Graphic designers, however, call such fields of unclaimed territory
+                “white
+                space.” These open areas are as sacred to us as a fresh bar of soap or a fifteen-minute intermission.
+                How
+                did we come to cherish the abyss, and does it have a future in today’s digital world? - <a
+                    href="https://ellenlupton.com/White-Space">Read the full essay by Ellen Lupton</a>.</p>
+        </blockquote>
+    </details>
+
+    <details>
+        <summary>Lists</summary>
+        <p>Unordered and ordered lists uses <code>display: grid</code> by default to add a default gap of
+            <code>0.5rem</code> between list entries.
+        </p>
+        <h3>Minimalist designers</h3>
+        <ul>
+            <li>Dieter Rams</li>
+            <li>John Maeda</li>
+            <li>Naoto Fukasawa</li>
+            <li>Jonathan Ive</li>
+            <li>Paul Rand</li>
+            <li>Massimo Vignelli</li>
+        </ul>
+
+        <h3>Steps to make pizza dough</h3>
+        <ol>
+            <li>Combine flour, salt, and yeast in a large bowl.</li>
+            <li>Add water and stir until a shaggy dough forms.</li>
+            <li>Cover bowl with plastic wrap and let rest at room temperature for 8-24 hours.</li>
+            <li>Transfer dough to a floured work surface.</li>
+            <li>Divide dough into 4 equal parts.</li>
+            <li>Shape each part into a round and let rest for 1 hour.</li>
+        </ol>
+
+
+        <h3>Five most popular ice cream flavours</h3>
+        <p>One can also use the <code>reset-list</code> utility class to turn of default list markers, margin and
+            padding. The unordered list below uses this utility class.</p>
+        <ul class="reset-list">
+            <li>Vanilla</li>
+            <li>Chocolate</li>
+            <li>Strawberry</li>
+            <li>Butter pecan</li>
+            <li>Rocky road</li>
+        </ul>
+    </details>
+
+    <h2>Colors</h2>
+
+    <p>Minimalist does not provide a color scheme or full palette but does provide a set of neutral colors and a set of
+        colors commonly used for user interface elements such as success, warning and error messages and statuses. All
+        colors are specified in hexadecimal format.</p>
+
+    <details>
+        <summary>Neutrals</summary>
+        <ul class="reset-list color-swatch-list">
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-10);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-20);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-30);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-40);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-50);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-60);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-70);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-80);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-neutral-90);"></div>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Greens</summary>
+        <ul class="reset-list color-swatch-list">
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-10);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-20);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-30);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-40);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-50);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-60);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-70);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-80);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-green-90);"></div>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Yellows</summary>
+        <ul class="reset-list color-swatch-list">
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-10);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-20);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-30);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-40);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-50);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-60);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-70);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-80);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-yellow-90);"></div>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Reds</summary>
+        <ul class="reset-list color-swatch-list">
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-10);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-20);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-30);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-40);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-50);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-60);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-70);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-80);"></div>
+            </li>
+            <li>
+                <div class="color-swatch" style="background-color: var(--color-red-90);"></div>
+            </li>
+        </ul>
+    </details>
+
+    <h3>Form elements</h3>
+
+    <h4>Standard input</h4>
+    <div class="form-field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+    </div>
+
+    <h4>Textarea</h4>
+    <div class="form-field">
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment"></textarea>
+    </div>
+
+    <h4>Select</h4>
+    <div class="form-field">
+        <label for="color">Favorite primary color</label>
+        <select id="color" name="color">
+            <option disabled value="" selected>Select a color</option>
+            <option value="cyan">Cyan</option>
+            <option value="magenta">Magenta</option>
+            <option value="yellow">Yellow</option>
+        </select>
+    </div>
+
+    <h5>Select multiple</h5>
+    <div class="form-field">
+        <label for="color-multiple">Favorite primary colors</label>
+        <select id="color-multiple" multiple name="color">
+            <option disabled value="" selected>Select a color</option>
+            <option value="cyan">Cyan</option>
+            <option value="magenta">Magenta</option>
+            <option value="yellow">Yellow</option>
+        </select>
+    </div>
+
+    <h4>Custom select</h4>
+    <div class="form-field">
+        <label for="custom-color">Favorite primary color (custom)</label>
+        <div class="custom-select">
+            <select class="custom-select-input" id="custom-color" name="color">
+                <option disabled value="" selected>Select a color</option>
+                <option value="cyan">Cyan</option>
+                <option value="magenta">Magenta</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </div>
+    </div>
+
+    <h5>Custom select full width</h5>
+    <div class="form-field">
+        <label for="custom-color-fullwidth">Favorite primary color (custom full-width)</label>
+        <div class="custom-select custom-select-full-width">
+            <select class="custom-select-input" id="custom-color-fullwidth" name="color">
+                <option disabled value="" selected>Select a color</option>
+                <option value="cyan">Cyan</option>
+                <option value="magenta">Magenta</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </div>
+    </div>
+
+    <h5>Custom select multiple</h5>
+    <div class="form-field">
+        <label for="custom-color-multiple">Favorite primary colors (custom)</label>
+        <div class="custom-select custom-select-multiple">
+            <select class="custom-select-input" id="custom-color-multiple" multiple name="color">
+                <option disabled value="" selected>Select a color</option>
+                <option value="cyan">Cyan</option>
+                <option value="magenta">Magenta</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </div>
+    </div>
+
+    <h4>Checkbox</h4>
+    <input id="checkbox" name="checkbox" type="checkbox">
+    <label for="checkbox">Checkbox</label>
+
+    <h4>Radio button</h4>
+    <input id="radio" name="radio" type="radio">
+    <label for="radio">Radio</label>
+
+    <h4>Contact form example</h4>
+
+    <form name="contact" action="/" method="post">
+        <fieldset>
+            <legend>Contact us</legend>
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" required minlength="10">
+            </div>
+
+            <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+        </fieldset>
+        <button class="button button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+            </svg>
+            <span>Email us</span>
+        </button>
+    </form>
+
+    <h3>Buttons</h3>
+
+    <ul class="reset-list card-container">
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Ghost button</h4>
+                <p class="card-description">Turns off the background color and border and sets the cursor to
+                    pointer.
+                </p>
+            </div>
+            <button class="button-ghost">Ghost button</button>
+        </li>
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Base button</h4>
+            </div>
+            <button class="button">Standard button</button>
+        </li>
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Outline button</h4>
+            </div>
+            <button class="button outline">Outline button</button>
+        </li>
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Bordered button</h4>
+            </div>
+            <button class="button bordered">Bordered button</button>
+        </li>
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Solid button</h4>
+            </div>
+            <button class="button solid">Standard button</button>
+        </li>
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Rounded button</h4>
+            </div>
+            <button class="button rounded">Standard button</button>
+        </li>
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Rounded, solid button</h4>
+            </div>
+            <button class="button solid rounded">Standard button</button>
+        </li>
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Icon button</h4>
+            </div>
+            <button class="button button-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                </svg>
+                <span>Email us</span>
+            </button>
+        </li>
+        <li class="card">
+            <div class="card-content">
+                <h4 class="card-title">Icon end button</h4>
+            </div>
+            <button class="button button-icon inline-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg>
+                <span>Contact us</span>
+            </button>
+        </li>
+    </ul>
+
+    <h3>Tables</h3>
+
+    <table>
+        <caption>
+            Examples of minimalism
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Area of interest</th>
+                <th scope="col">Further reading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Computing</td>
+                <td><a href="https://en.wikipedia.org/wiki/Minimalism_(computing)">Read more about minimalism in
+                        computing</a></td>
+            </tr>
+            <tr>
+                <td>Philosophy</td>
+                <td><a href="https://en.wikipedia.org/wiki/Minimalism_(philosophy)">Read more about minimalism in
+                        philosophy</a></td>
+            </tr>
+            <tr>
+                <td>Natural language</td>
+                <td><a href="https://en.wikipedia.org/wiki/Minimalism_(syntax)">Read more about minimalism in
+                        natural
+                        language</a></td>
+            </tr>
+            <tr>
+                <td>Technical communication</td>
+                <td><a href="https://en.wikipedia.org/wiki/Minimalism_(technical_communication)">Read more about
+                        minimalism in technical communication</a></td>
+            </tr>
+            <tr>
+                <td>Visual arts</td>
+                <td><a href="https://en.wikipedia.org/wiki/Minimalism_(visual_arts)">Read more about minimalism in
+                        the
+                        visual arts</a></td>
+            </tr>
+            <tr>
+                <td>Music</td>
+                <td><a href="https://en.wikipedia.org/wiki/Minimalist_music">Read more about minimalism in music</a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Minimalism is a movement in visual arts, music, and other media that began in
+                    post–World
+                    War II Western art. <a href="https://en.wikipedia.org/wiki/Minimalism_(disambiguation)">Read
+                        more on
+                        Wikipedia</a></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h3>Media</h3>
+
+    <h4><code>figure</code> and <code>figcaption</code></h4>
+
+    <figure>
+        <img src="demo/whistler-mountains.webp" height="540" width="720"
+            alt="A scenic view of snow-covered mountains under a bright blue sky with clouds. The foreground features a few buildings, green patches, and pathways.">
+        <figcaption>It was a series of firsts. First time in Canada, first time seeing snow, and the first time on such
+            a high mountain range.</figcaption>
+    </figure>
+
+    <h4><code>figure</code> with overlapping <code>figcaption</code></h4>
+    <figure class="overlap">
+        <img src="demo/whistler-mountains.webp" height="540" width="720"
+            alt="A scenic view of snow-covered mountains under a bright blue sky with clouds. The foreground features a few buildings, green patches, and pathways.">
+        <figcaption>It was a series of firsts. First time in Canada, first time seeing snow, and the first time on such
+            a high mountain range.</figcaption>
+    </figure>
+</main>
+<footer class="page-footer">
+    <a href="https://github.com/schalkneethling/minimalist">Contribute to Minimalist on GitHub</a>
+</footer>
+
+</html>

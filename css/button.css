@@ -1,0 +1,61 @@
+.button-ghost {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.button {
+  /* to ensure a border is visible on Windows high-contrast mode */
+  border: var(--border-transparent);
+  cursor: pointer;
+  display: inline-block;
+  max-inline-size: max-content;
+  padding: var(--size-8) var(--size-16);
+  text-decoration: none;
+
+  &:active {
+    margin-block-start: var(--size-1);
+    margin-inline-start: var(--size-1);
+  }
+
+  &.rounded {
+    border-radius: var(--border-radius-default);
+  }
+
+  &.bordered {
+    border: var(--border-primary-border);
+  }
+
+  &.outline {
+    background-color: transparent;
+    border: var(--border-primary-border);
+  }
+
+  &.solid {
+    background-color: var(--color-neutral-90);
+    border: var(--color-neutral-90);
+    color: var(--color-neutral-inverted);
+    transition: background-color 0.2s ease-in;
+
+    &:focus,
+    &:hover {
+      background-color: var(--color-neutral-80);
+      border: var(--color-neutral-80);
+    }
+  }
+}
+
+.button-icon {
+  align-items: center;
+  display: flex;
+  gap: var(--size-8);
+
+  &.inline-end {
+    flex-direction: row-reverse;
+  }
+
+  svg {
+    block-size: auto;
+    inline-size: 1.5rem;
+  }
+}

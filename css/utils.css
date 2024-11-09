@@ -1,0 +1,24 @@
+.reset-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * A simply utility for setting a max width on an element that constrains its
+ * width to what is commonly known to be a readable line length for prose.
+ */
+.readable-line-length {
+  max-width: 40rem;
+  max-width: 85ch;
+}
+
+/* https://www.tpgi.com/the-anatomy-of-visually-hidden/ */
+.visually-hidden:not(:focus):not(:active) {
+  block-size: 1px;
+  clip-path: inset(50%);
+  inline-size: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}

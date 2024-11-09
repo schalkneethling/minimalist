@@ -1,3 +1,3 @@
 # minimalist
 
-A minimal pure CSS starter framework for most web projects.
+A minimal pure CSS starter library for most web projects.

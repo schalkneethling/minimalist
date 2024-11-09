@@ -1,9 +1,18 @@
 :root {
-  --border-light-border: 0.2rem solid var(--color-neutral-40);
-  --border-primary-border: 0.2rem solid var(--color-neutral-70);
-  --border-table-border: 0.2rem solid var(--color-neutral-50);
+  --border-transparent: var(--size-2) solid transparent;
+  --border-light-border: var(--size-2) solid var(--color-neutral-40);
+  --border-primary-border: var(--size-2) solid var(--color-neutral-70);
+  --border-table-border: var(--size-2) solid var(--color-neutral-50);
 
   --border-radius-default: 0.5rem;
+
+  --link-text-decoration-offset: var(--size-4);
+
+  --color-link-color: #0342a4;
+  --color-link-visited-color: #561c4a;
+
+  --color-neutral-inverted-transparent-70: rgba(255, 255, 255, 0.7);
+  --color-neutral-inverted: #fff;
 
   --color-neutral-10: #f4f4f4;
   --color-neutral-20: #d5d5d5;
@@ -45,12 +54,15 @@
   --color-red-80: #700003;
   --color-red-90: #3f0001;
 
+  --color-error-border: var(--color-red-60);
+  --color-valid-border: var(--color-green-60);
+  --color-warning-border: var(--color-yellow-50);
+
+  --color-error-outline: var(--color-red-40);
+  --color-valid-outline: var(--color-green-40);
+  --color-warning-outline: var(--color-yellow-40);
+
   /* Gradients */
-  --color-gradient-blockquote: linear-gradient(
-    to right,
-    var(--color-neutral-70),
-    var(--color-neutral-40)
-  );
   --color-gradient-standard: linear-gradient(
     to right,
     var(--color-neutral-30),
@@ -71,12 +83,20 @@
   --shadow-light-gray: 0 1px 2px 1px var(--color-neutral-20);
 
   /* Assuming a base of 16px */
-  --spacing-narrow: 0.5rem; /* 8px */
-  --spacing-default: 1rem; /* 16px */
-  --spacing-medium: 2rem; /* 32px */
-  --spacing-wide: 4rem; /* 64px */
-  --spacing-xwide: 6rem; /* 96px */
-  --spacing-xxwide: 9rem; /* 144px - use sparingly */
+  --size-112: 7rem; /* 112px */
+  --size-96: 6rem; /* 96px */
+  --size-80: 5rem; /* 80px */
+  --size-64: 4rem; /* 64px */
+  --size-48: 3rem; /* 48px */
+  --size-32: 2rem; /* 32px */
+  --size-24: 1.5rem; /* 24px */
+  --size-16: 1rem; /* 16px */
+  --size-12: 0.75rem; /* 12px */
+  --size-8: 0.5rem; /* 8px */
+  --size-6: 0.375rem; /* 6px */
+  --size-4: 0.25rem; /* 4px */
+  --size-2: 0.125rem; /* 2px */
+  --size-1: 0.0625rem; /* 1px */
 
   --section-top-margin: var(--spacing-wide);
 
@@ -103,6 +123,8 @@
   --typography-document-line-height: 1.75;
   --typography-code-example-line-height: 1.4;
   --typography-heading-line-height: 1.2;
+  /* reduced line height for interactive elements */
+  --typography-iactive-line-height: 1.1;
 
   /* z-index scale */
   --send-to-back: -1;
@@ -112,7 +134,7 @@
   --top-layer: 300;
 }
 
-@media only screen and (min-width: 47.9375rem) {
+@media only screen and (min-width: 63.9375rem) {
   :root {
     --typography-size-display: 5.61rem; /* 90px */
     --typography-size-xxl: 4.209rem; /* 67px */
