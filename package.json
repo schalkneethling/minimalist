@@ -26,20 +26,10 @@
   },
   "homepage": "https://github.com/schalkneethling/minimalist#readme",
   "devDependencies": {
-    "bundlesize": "^0.18.2",
-    "http-server": "^14.1.1",
-    "prettier": "^3.2.5",
-    "pretty-quick": "^4.0.0",
-    "stylelint": "^16.10.0",
+    "prettier": "^3.3.3",
+    "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-recommended": "^14.0.0",
-    "stylelint-prettier": "^1.1.2"
-  },
-  "bundlesize": [
-    {
-      "path": "./public/css/main.css",
-      "maxSize": "10 kB",
-      "compression": "gzip"
-    }
-  ]
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-prettier": "^5.0.2"
+  }
 }
