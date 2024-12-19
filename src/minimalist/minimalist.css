@@ -1,18 +1,16 @@
 @layer reset, utils, core, components;
 
-@import "reset.css" layer(reset);
+@import "./utils/reset.css" layer(reset);
 
-@import "utils.css" layer(utils);
+@import "./utils/utils.css" layer(utils);
 
-@import "custom-properties.css" layer(core);
-@import "button.css" layer(core);
-@import "typography.css" layer(core);
-@import "text.css" layer(core);
-@import "forms.css" layer(core);
-@import "table.css" layer(core);
-@import "media.css" layer(core);
-
-@import "fiori/custom-select.css" layer(components);
+@import "./tokens/custom-properties.css" layer(core);
+@import "./atoms/button.css" layer(core);
+@import "./atoms/typography.css" layer(core);
+@import "./atoms/text.css" layer(core);
+@import "./atoms/forms.css" layer(core);
+@import "./atoms/table.css" layer(core);
+@import "./atoms/media.css" layer(core);
 
 :root {
   --link-color: var(--color-link-color, mediumblue);
