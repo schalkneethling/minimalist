@@ -9,7 +9,7 @@ import { logger } from "./utils/logger.js";
 const main = async () => {
   console.clear();
 
-  intro("Thank you for choosing minimalist! 🧑🏿‍🎤");
+  intro("Thank you for choosing minimalist! 🐳");
 
   const targetDir = await text({
     message: "Enter the target directory relative to the project root.",
