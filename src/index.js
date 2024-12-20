@@ -21,7 +21,8 @@ const main = async () => {
   });
 
   try {
-    const minimalistDir = resolve(process.cwd(), "src/minimalist");
+    logger.debug("resolving directories");
+    const minimalistDir = resolve(import.meta.dirname, "./minimalist");
     const resolvedTargetDir = resolve(targetDir);
 
     await cp(minimalistDir, resolve(resolvedTargetDir, "minimalist"), {
