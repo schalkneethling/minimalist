@@ -1,9 +1,8 @@
 {
   "extends": "stylelint-config-standard",
-  "plugins": [
-    "stylelint-order"
-  ],
+  "plugins": ["stylelint-order"],
   "rules": {
-    "order/properties-alphabetical-order": true
+    "order/properties-alphabetical-order": true,
+    "custom-property-empty-line-before": null
   }
 }

@@ -1,18 +1,17 @@
-@layer reset, utils, core, components;
+@layer minimalist-reset, minimalist-utils, minimalist-core;
 
-@import "./utils/reset.css" layer(reset);
-
-@import "./utils/utils.css" layer(utils);
-
-@import "./tokens/custom-properties.css" layer(core);
-@import "./atoms/button.css" layer(core);
-@import "./atoms/typography.css" layer(core);
-@import "./atoms/text.css" layer(core);
-@import "./atoms/forms.css" layer(core);
-@import "./atoms/table.css" layer(core);
-@import "./atoms/media.css" layer(core);
+@import url("./utils/reset.css") layer(minimalist-reset);
+@import url("./utils/utils.css") layer(minimalist-utils);
+@import url("./tokens/custom-properties.css") layer(minimalist-core);
+@import url("./atoms/button.css") layer(minimalist-core);
+@import url("./atoms/typography.css") layer(minimalist-core);
+@import url("./atoms/text.css") layer(minimalist-core);
+@import url("./atoms/forms.css") layer(minimalist-core);
+@import url("./atoms/table.css") layer(minimalist-core);
+@import url("./atoms/media.css") layer(minimalist-core);
 
 :root {
+  /* Custom properties */
   --link-color: var(--color-link-color, mediumblue);
   --link-color-visited: var(--color-link-visited-color, darkmagenta);
   --link-focus-visible-box-shadow: 0 0 0 var(--size-2)

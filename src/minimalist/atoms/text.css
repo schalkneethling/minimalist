@@ -12,11 +12,8 @@ blockquote p:not(:last-child) {
   margin-block-end: var(--size-8);
 }
 
-code {
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  white-space: nowrap;
-  word-wrap: break-word;
+pre {
+  padding: var(--minimalist-pre-padding, var(--size-16));
 }
 
 :is(h1, h2, h3, h4, h5, h6) code {

@@ -16,15 +16,6 @@ textarea {
 }
 
 input:user-valid,
-input:user-invalid,
-input:focus:invalid:not(:user-invalid),
-textarea:user-valid,
-textarea:user-invalid,
-textarea:focus:invalid:not(:user-invalid) {
-  outline-offset: var(--size-2);
-}
-
-input:user-valid,
 textarea:user-valid {
   border-color: var(--color-valid-border);
   outline-color: var(--color-valid-outline);
@@ -34,6 +25,15 @@ input:user-invalid,
 textarea:user-invalid {
   border-color: var(--color-error-border);
   outline-color: var(--color-error-outline);
+}
+
+input:user-valid,
+input:user-invalid,
+input:focus:invalid:not(:user-invalid),
+textarea:user-valid,
+textarea:user-invalid,
+textarea:focus:invalid:not(:user-invalid) {
+  outline-offset: var(--size-2);
 }
 
 input:focus:invalid:not(:user-invalid),

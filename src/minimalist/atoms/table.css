@@ -42,6 +42,7 @@ tfoot {
   background-color: var(--table-tfoot-background);
   color: var(--table-tfoot-foreground);
 
+  /* stylelint-disable-next-line no-descending-specificity */
   td {
     padding: var(--table-tfoot-spacing);
   }

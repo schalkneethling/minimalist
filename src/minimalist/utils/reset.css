@@ -12,10 +12,14 @@
 }
 
 /* Prevent font size inflation */
+
 /* https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/ */
+
 /* https://caniuse.com/text-size-adjust */
 html {
+  /* stylelint-disable-next-line property-no-vendor-prefix */
   -moz-text-size-adjust: none;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
@@ -35,16 +39,16 @@ dd {
 
 /* Set core body defaults */
 body {
+  /* If supported, inherits the iOS font settings
+     More at https://frontendmasters.com/blog/letting-ios-text-size-setting-affect-font-size-on-the-web/ */
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font: -apple-system-body;
+  font-size: 100%; /* Respect user choice */
   line-height: var(--typography-document-line-height);
   min-block-size: 100vh;
-  font-size: 100%; /* Respect user choice */
-
-  /* If supported, inherits the iOS font settings 
-     More at https://frontendmasters.com/blog/letting-ios-text-size-setting-affect-font-size-on-the-web/ */
-  font: -apple-system-body;
 
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering#browser_compatibility */
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
 }
 
 summary {
@@ -72,6 +76,7 @@ textarea:not([rows]) {
 }
 
 /* Balance text wrapping on headings */
+
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/text-wrap#balance */
 h1,
 h2,
