@@ -11,7 +11,7 @@
   --color-link-color: #0342a4;
   --color-link-visited-color: #561c4a;
 
-  --color-neutral-inverted-transparent-70: rgba(255, 255, 255, 0.7);
+  --color-neutral-inverted-transparent-70: rgba(255 255 255 0.7);
   --color-neutral-inverted: #fff;
 
   --color-neutral-10: #f4f4f4;
@@ -75,7 +75,7 @@
     var(--color-neutral-20)
   );
 
-  --overlay-background-color: rgba(0, 0, 0, 0.5);
+  --overlay-background-color: rgba(0 0 0 0.5);
 
   /* shadows */
   --shadow-button-active-state: 1px 1px 0 3px var(--color-neutral-30),
@@ -101,14 +101,14 @@
   --section-top-margin: var(--spacing-wide);
 
   /* typography - https://systemfontstack.com */
-  --typography-heading-family: Iowan Old Style, Apple Garamond, Baskerville,
-    Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  --typography-body-family: -apple-system, BlinkMacSystemFont, avenir next,
-    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
-    arial, sans-serif;
-  --typography-code-family: Menlo, Consolas, Monaco, Liberation Mono,
-    Lucida Console, monospace;
+  --typography-heading-family: iowan old style, apple garamond, baskerville,
+    times new roman, droid serif, times, source serif pro, serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol;
+  --typography-body-family: -apple-system, blinkmacsystemfont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, cantarell, ubuntu, roboto,
+    noto, arial, sans-serif;
+  --typography-code-family: menlo, consolas, monaco, liberation mono,
+    lucida console, monospace;
 
   --typography-size-display: 3.815rem; /* 61px */
   --typography-size-xxl: 3.052rem; /* 49px */
@@ -123,6 +123,7 @@
   --typography-document-line-height: 1.75;
   --typography-code-example-line-height: 1.4;
   --typography-heading-line-height: 1.2;
+
   /* reduced line height for interactive elements */
   --typography-iactive-line-height: 1.1;
 
@@ -134,7 +135,7 @@
   --top-layer: 300;
 }
 
-@media only screen and (min-width: 63.9375rem) {
+@media only screen and (width >= 63.9375rem) {
   :root {
     --typography-size-display: 5.61rem; /* 90px */
     --typography-size-xxl: 4.209rem; /* 67px */
