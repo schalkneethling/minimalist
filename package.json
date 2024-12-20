@@ -1,6 +1,6 @@
 {
   "name": "create-minimalist",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A minimal pure CSS starter library for most web projects.",
   "type": "module",
   "exports": "./src/index.js",
