@@ -10,11 +10,11 @@
 
 .button {
   /* to ensure a border is visible on Windows high-contrast mode */
-  border: var(--minimalist-button-border-default, --border-transparent);
+  border: var(--minimalist-button-border-default, var(--border-transparent));
   display: inline-block;
   max-inline-size: max-content;
-  padding-block: var(--minimalist-button-padding-block, --size-8);
-  padding-inline: var(--minimalist-button-padding-inline, --size-16);
+  padding-block: var(--minimalist-button-padding-block, var(--size-8));
+  padding-inline: var(--minimalist-button-padding-inline, var(--size-16));
   text-decoration: none;
 
   &:active {
@@ -25,37 +25,49 @@
   &.rounded {
     border-radius: var(
       --minimalist-button-border-radius-default,
-      --border-radius-default
+      var(--border-radius-default)
     );
   }
 
   &.bordered {
-    border: var(--minimalist-button-primary-border, --border-primary-border);
+    border: var(
+      --minimalist-button-primary-border,
+      var(--border-primary-border)
+    );
   }
 
   &.outline {
     background-color: transparent;
-    border: var(--minimalist-button-primary-border, --border-primary-border);
+    border: var(
+      --minimalist-button-primary-border,
+      var(--border-primary-border)
+    );
   }
 
   &.solid {
-    background-color: var(--minimalist-button-bg-color, --color-neutral-90);
+    background-color: var(
+      --minimalist-button-bg-color,
+      var(--color-neutral-90)
+    );
     border-color: var(
       --minimalist-button-solid-border-color,
-      --color-neutral-90
+      var(--color-neutral-90)
     );
-    color: var(--minimalist-button-solid-txt-color, --color-neutral-inverted);
+    color: var(
+      --minimalist-button-solid-txt-color,
+      var(--color-neutral-inverted)
+    );
     transition: background-color 0.2s ease-in;
 
     &:focus,
     &:hover {
       background-color: var(
         --minimalist-button-hover-bg-color,
-        --color-neutral-80
+        var(--color-neutral-80)
       );
       border-color: var(
         --minimalist-button-solid-hover-border-color,
-        --color-neutral-80
+        var(--color-neutral-80)
       );
     }
   }
@@ -64,14 +76,14 @@
 .button-icon {
   align-items: center;
   display: flex;
-  gap: var(--minimalist-button-icon-gap, --size-8);
+  gap: var(--minimalist-button-icon-gap, var(--size-8));
 
   &.inline-end {
     flex-direction: row-reverse;
   }
 
   svg {
-    block-size: var(--minimalist-icon-default-size, --icon-default-size);
-    inline-size: var(--minimalist-icon-default-size, --icon-default-size);
+    block-size: var(--minimalist-icon-default-size, var(--icon-default-size));
+    inline-size: var(--minimalist-icon-default-size, var(--icon-default-size));
   }
 }

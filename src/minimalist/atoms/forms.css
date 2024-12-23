@@ -1,29 +1,32 @@
 fieldset {
-  margin-block: var(--minimalist-fieldset-margin-block, --size-12);
+  margin-block: var(--minimalist-fieldset-margin-block, var(--size-12));
 }
 
 .form-field {
   display: grid;
-  gap: var(--minimalist-form-field-gap, --size-12);
-  margin-block-end: var(--minimalist-form-field-margin-block-end, --size-12);
+  gap: var(--minimalist-form-field-gap, var(--size-12));
+  margin-block-end: var(
+    --minimalist-form-field-margin-block-end,
+    var(--size-12)
+  );
 }
 
 input,
 select:not(.custom-select),
 textarea {
-  border: var(--minimalist-input-border, --border-primary-border);
-  padding: var(--minimalist-input-padding, --size-6);
+  border: var(--minimalist-input-border, var(--border-primary-border));
+  padding: var(--minimalist-input-padding, var(--size-6));
 }
 
 input:user-valid,
 textarea:user-valid {
   border-color: var(
     --minimalist-input-border-valid-color,
-    --color-valid-border
+    var(--color-valid-border)
   );
   outline-color: var(
     --minimalist-input-border-valid-outline,
-    --color-valid-outline
+    var(--color-valid-outline)
   );
 }
 
@@ -31,11 +34,11 @@ input:user-invalid,
 textarea:user-invalid {
   border-color: var(
     --minimalist-input-border-critical-color,
-    --color-critical-border
+    var(--color-critical-border)
   );
   outline-color: var(
     --minimalist-input-border-critical-outline,
-    --color-critical-outline
+    var(--color-critical-outline)
   );
 }
 
@@ -52,10 +55,10 @@ input:focus:invalid:not(:user-invalid),
 textarea:focus:invalid:not(:user-invalid) {
   border-color: var(
     --minimalist-input-border-warning-color,
-    --color-warning-border
+    var(--color-warning-border)
   );
   outline-color: var(
     --minimalist-input-border-warning-outline,
-    --color-warning-outline
+    var(--color-warning-outline)
   );
 }

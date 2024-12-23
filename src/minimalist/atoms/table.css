@@ -1,47 +1,53 @@
 table {
-  border: var(--minimalist-table-border, --table-border);
-  width: var(--minimalist-table-width, --table-width);
+  border: var(--minimalist-table-border, var(--table-border));
+  width: var(--minimalist-table-width, var(--table-width));
 }
 
 caption {
-  font: var(--minimalist-table-caption-font-size, --table-caption-font-size);
+  font: var(
+    --minimalist-table-caption-font-size,
+    var(--table-caption-font-size)
+  );
   margin-block-end: var(
     --minimalist-table-caption-margin-block-end,
-    --table-caption-margin-block-end
+    var(--table-caption-margin-block-end)
   );
-  text-align: var(--minimalist-table-caption-align, --table-caption-align);
+  text-align: var(--minimalist-table-caption-align, var(--table-caption-align));
 }
 
 thead {
   background-color: var(
     --minimalist-table-thead-bg-color,
-    --table-thead-bg-color
+    var(--table-thead-bg-color)
   );
-  color: var(--minimalist-table-thead-color, --table-thead-color);
+  color: var(--minimalist-table-thead-color, var(--table-thead-color));
 
   th {
-    padding: var(--minimalist-table-cell-padding, --table-cell-padding);
-    text-align: var(--minimalist-table-thead-align, --table-thead-align);
+    padding: var(--minimalist-table-cell-padding, var(--table-cell-padding));
+    text-align: var(--minimalist-table-thead-align, var(--table-thead-align));
   }
 }
 
 tbody {
   td {
-    border-block-end: var(--minimalist-table-cell-border, --table-cell-border);
-    padding: var(--minimalist-table-cell-padding, --table-cell-padding);
+    border-block-end: var(
+      --minimalist-table-cell-border,
+      var(--table-cell-border)
+    );
+    padding: var(--minimalist-table-cell-padding, var(--table-cell-padding));
   }
 
   tr:nth-child(odd) {
     background-color: var(
       --minimalist-table-tbody-bg-odd,
-      --table-tbody-bg-odd
+      var(--table-tbody-bg-odd)
     );
   }
 
   tr:nth-child(even) {
     background-color: var(
       --minimalist-table-tbody-bg-even,
-      --table-tbody-bg-even
+      var(--table-tbody-bg-even)
     );
   }
 
@@ -53,19 +59,19 @@ tbody {
 tfoot {
   background-color: var(
     --minimalist-table-tfoot-bg-color,
-    --table-tfoot-bg-color
+    var(--table-tfoot-bg-color)
   );
-  color: var(--minimalist-table-tfoot-color, --table-tfoot-color);
+  color: var(--minimalist-table-tfoot-color, var(--table-tfoot-color));
 
   /* stylelint-disable-next-line no-descending-specificity */
   td {
     padding-block: var(
       --minimalist-table-tfoot-padding-block,
-      --table-tfoot-padding-block
+      var(--table-tfoot-padding-block)
     );
     padding-inline: var(
       --minimalist-table-tfoot-padding-inline,
-      --table-tfoot-padding-inline
+      var(--table-tfoot-padding-inline)
     );
   }
 }

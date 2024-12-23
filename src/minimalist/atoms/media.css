@@ -1,8 +1,8 @@
 figure {
-  border: var(--minimalist-figure-border, --figure-border);
+  border: var(--minimalist-figure-border, var(--figure-border));
   display: grid;
   margin: 0;
-  margin-block: var(--minimalist-figure-margin-block, --size-16);
+  margin-block: var(--minimalist-figure-margin-block, var(--size-16));
   max-width: max-content;
 
   img {
@@ -12,13 +12,13 @@ figure {
   figcaption {
     background-color: var(
       --minimalist-figcaption-background-color,
-      --figcaption-background-color
+      var(--figcaption-background-color)
     );
     color: var(
       --minimalist-figcaption-foreground-color,
-      --figcaption-foreground-color
+      var(--figcaption-foreground-color)
     );
-    padding: var(--minimalist-figcaption-spacing, --figcaption-spacing);
+    padding: var(--minimalist-figcaption-spacing, var(--figcaption-spacing));
   }
 }
 
@@ -33,11 +33,11 @@ figure.overlap {
   figcaption {
     background-color: var(
       --minimalist-figcaption-overlap-background-color,
-      --figcaption-overlap-background-color
+      var(--figcaption-overlap-background-color)
     );
     color: var(
       --minimalist-figcaption-overlap-foreground-color,
-      --figcaption-overlap-foreground-color
+      var(--figcaption-overlap-foreground-color)
     );
     place-self: end;
   }
