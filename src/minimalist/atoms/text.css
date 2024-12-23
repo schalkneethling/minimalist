@@ -1,7 +1,10 @@
 blockquote {
-  border-inline-start: var(--size-4) solid var(--color-neutral-70);
+  border-inline-start: var(
+    --minimalist-blockquote-border,
+    var(--border-blockquote)
+  );
   font-style: italic;
-  padding: var(--size-8);
+  padding: var(--minimalist-blockquote-padding, var(--size-8));
 }
 
 blockquote p {
@@ -9,7 +12,10 @@ blockquote p {
 }
 
 blockquote p:not(:last-child) {
-  margin-block-end: var(--size-8);
+  margin-block-end: var(
+    --minimalist-blockquote-paragraph-block-end,
+    var(--size-8)
+  );
 }
 
 pre {
@@ -21,16 +27,19 @@ pre {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--minimalist-link-color, var(--link-color));
   text-decoration-thickness: from-font;
 
   &:visited {
-    color: var(--link-color-visited);
+    color: var(--minimalist-link-color-visited, var(--link-color-visited));
   }
 
   &:hover,
   &:focus {
-    text-underline-offset: var(--link-text-decoration-offset);
+    text-underline-offset: var(
+      --minimalist-link-text-decoration-offset,
+      var(--link-text-decoration-offset)
+    );
   }
 
   &:active {
@@ -38,14 +47,23 @@ a {
   }
 
   &:focus-visible {
-    box-shadow: var(--link-focus-visible-box-shadow);
-    outline: var(--link-focus-visible-outline);
-    outline-offset: var(--link-focus-visible-outline-offset);
+    box-shadow: var(
+      --minimalist-link-focus-visible-box-shadow,
+      var(--link-focus-visible-box-shadow)
+    );
+    outline: var(
+      --minimalist-link-focus-visible-outline,
+      var(--link-focus-visible-outline)
+    );
+    outline-offset: var(
+      --minimalist-link-focus-visible-outline-offset,
+      var(--link-focus-visible-outline-offset)
+    );
   }
 }
 
 ul,
 ol {
   display: grid;
-  gap: var(--size-8);
+  gap: var(--minimalist-list-items-gap, var(--size-8));
 }

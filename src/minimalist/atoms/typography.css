@@ -4,6 +4,7 @@
 .heading-large,
 .heading-medium,
 .heading-small-mediium,
+caption,
 h1,
 h2,
 h3,
@@ -70,7 +71,7 @@ body {
   font-size: var(--typography-size-small);
 }
 
-.tiny-small {
+.text-tiny {
   font-size: var(--typography-size-tiny);
 }
 
