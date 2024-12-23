@@ -1,3 +1,8 @@
+/**
+ * CSS class to reset the default list styling.
+ * - Removes bullet points or numbers from list items.
+ * - Eliminates default margin and padding.
+ */
 .reset-list {
   list-style-type: none;
   margin: 0;
@@ -5,7 +10,7 @@
 }
 
 /*
- * A simply utility for setting a max width on an element that constrains its
+ * A simple utility for setting a max width on an element that constrains its
  * width to what is commonly known to be a readable line length for prose.
  */
 .readable-line-length {
@@ -14,7 +19,7 @@
 }
 
 /* https://www.tpgi.com/the-anatomy-of-visually-hidden/ */
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus, :active) {
   block-size: 1px;
   clip-path: inset(50%);
   inline-size: 1px;

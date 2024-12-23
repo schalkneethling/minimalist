@@ -1,30 +1,42 @@
 fieldset {
-  margin-block: var(--size-12);
+  margin-block: var(--minimalist-fieldset-margin-block, --size-12);
 }
 
 .form-field {
   display: grid;
-  gap: var(--size-12);
-  margin-block-end: var(--size-12);
+  gap: var(--minimalist-form-field-gap, --size-12);
+  margin-block-end: var(--minimalist-form-field-margin-block-end, --size-12);
 }
 
 input,
 select:not(.custom-select),
 textarea {
-  border: var(--size-2) solid var(--color-neutral-70);
-  padding: var(--size-6);
+  border: var(--minimalist-input-border, --border-primary-border);
+  padding: var(--minimalist-input-padding, --size-6);
 }
 
 input:user-valid,
 textarea:user-valid {
-  border-color: var(--color-valid-border);
-  outline-color: var(--color-valid-outline);
+  border-color: var(
+    --minimalist-input-border-valid-color,
+    --color-valid-border
+  );
+  outline-color: var(
+    --minimalist-input-border-valid-outline,
+    --color-valid-outline
+  );
 }
 
 input:user-invalid,
 textarea:user-invalid {
-  border-color: var(--color-error-border);
-  outline-color: var(--color-error-outline);
+  border-color: var(
+    --minimalist-input-border-critical-color,
+    --color-critical-border
+  );
+  outline-color: var(
+    --minimalist-input-border-critical-outline,
+    --color-critical-outline
+  );
 }
 
 input:user-valid,
@@ -38,6 +50,12 @@ textarea:focus:invalid:not(:user-invalid) {
 
 input:focus:invalid:not(:user-invalid),
 textarea:focus:invalid:not(:user-invalid) {
-  border-color: var(--color-warning-border);
-  outline-color: var(--color-warning-outline);
+  border-color: var(
+    --minimalist-input-border-warning-color,
+    --color-warning-border
+  );
+  outline-color: var(
+    --minimalist-input-border-warning-outline,
+    --color-warning-outline
+  );
 }

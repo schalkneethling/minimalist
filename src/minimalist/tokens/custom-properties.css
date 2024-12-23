@@ -2,6 +2,7 @@
   --border-transparent: var(--size-2) solid transparent;
   --border-light-border: var(--size-2) solid var(--color-neutral-40);
   --border-primary-border: var(--size-2) solid var(--color-neutral-70);
+  --border-blockquote: var(--size-4) solid var(--color-neutral-70);
   --border-table-border: var(--size-2) solid var(--color-neutral-50);
 
   --border-radius-default: 0.5rem;
@@ -54,11 +55,11 @@
   --color-red-80: #700003;
   --color-red-90: #3f0001;
 
-  --color-error-border: var(--color-red-60);
+  --color-critical-border: var(--color-red-60);
   --color-valid-border: var(--color-green-60);
   --color-warning-border: var(--color-yellow-50);
 
-  --color-error-outline: var(--color-red-40);
+  --color-critical-outline: var(--color-red-40);
   --color-valid-outline: var(--color-green-40);
   --color-warning-outline: var(--color-yellow-40);
 
@@ -74,6 +75,25 @@
     var(--color-neutral-10),
     var(--color-neutral-20)
   );
+
+  --figure-border: var(--size-4) solid var(--color-neutral-80);
+  --figcaption-background-color: var(--color-neutral-20);
+  --figcaption-overlap-background-color: var(
+    --color-neutral-inverted-transparent-70
+  );
+  --figcaption-foreground-color: var(--color-neutral-80);
+  --figcaption-overlap-foreground-color: var(--color-neutral-80);
+  --figcaption-spacing: var(--size-8);
+
+  /** Links */
+  --link-color: var(--color-link-color);
+  --link-color-visited: var(--color-link-visited-color);
+  --link-focus-visible-box-shadow: 0 0 0 var(--size-2)
+    var(--color-neutral-inverted);
+  --link-focus-visible-outline: var(--size-2) solid var(--color-neutral-80);
+  --link-focus-visible-outline-offset: var(--size-4);
+
+  --icon-default-size: 1.5rem; /* 24px */
 
   --overlay-background-color: rgba(0 0 0 0.5);
 
@@ -100,6 +120,29 @@
 
   --section-top-margin: var(--spacing-wide);
 
+  /* Table styles */
+  --table-border: var(--size-4) solid var(--color-neutral-80);
+  --table-width: 100%;
+
+  --table-caption-align: start;
+  --table-caption-font-size: var(--typography-size-medium);
+  --table-caption-margin-block-end: var(--size-12);
+
+  --table-thead-bg-color: var(--color-neutral-80);
+  --table-thead-color: var(--color-neutral-10);
+  --table-thead-align: start;
+
+  --table-cell-border: var(--size-1) solid var(--color-neutral-80);
+  --table-cell-padding: var(--size-8);
+
+  --table-tbody-bg-odd: var(--color-neutral-10);
+  --table-tbody-bg-even: var(--color-neutral-inverted);
+
+  --table-tfoot-bg-color: var(--color-neutral-20);
+  --table-tfoot-color: var(--color-neutral-80);
+  --table-tfoot-padding-block: var(--size-16);
+  --table-tfoot-padding-inline: var(--size-8);
+
   /* typography - https://systemfontstack.com */
   --typography-heading-family: iowan old style, apple garamond, baskerville,
     times new roman, droid serif, times, source serif pro, serif,
@@ -125,7 +168,7 @@
   --typography-heading-line-height: 1.2;
 
   /* reduced line height for interactive elements */
-  --typography-iactive-line-height: 1.1;
+  --typography-interactive-line-height: 1.1;
 
   /* z-index scale */
   --send-to-back: -1;
