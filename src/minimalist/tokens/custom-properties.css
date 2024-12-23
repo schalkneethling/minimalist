@@ -153,15 +153,35 @@
   --typography-code-family: menlo, consolas, monaco, liberation mono,
     lucida console, monospace;
 
-  --typography-size-display: 3.815rem; /* 61px */
-  --typography-size-xxl: 3.052rem; /* 49px */
-  --typography-size-xl: 2.441rem; /* 39px */
-  --typography-size-large: 1.953rem; /* 31px */
-  --typography-size-medium: 1.563rem; /* 25px */
-  --typography-size-small-medium: 1.25rem; /* 20px */
+  --minimalist-typography-scale-mobile: 1.25;
+
   --typography-size-default: 1rem; /* 16px */
-  --typography-size-small: 0.75rem; /* 12px */
-  --typography-size-tiny: 0.563rem; /* 9px */
+
+  --typography-size-small-medium: calc(
+    var(--typography-size-default) * var(--minimalist-typography-scale-mobile)
+  ); /* 20px */
+  --typography-size-medium: calc(
+    var(--typography-size-small-medium) *
+      var(--minimalist-typography-scale-mobile)
+  ); /* 25px */
+  --typography-size-large: calc(
+    var(--typography-size-medium) * var(--minimalist-typography-scale-mobile)
+  ); /* 31px */
+  --typography-size-xl: calc(
+    var(--typography-size-large) * var(--minimalist-typography-scale-mobile)
+  ); /* 39px */
+  --typography-size-xxl: calc(
+    var(--typography-size-xl) * var(--minimalist-typography-scale-mobile)
+  ); /* 49px */
+  --typography-size-display: calc(
+    var(--typography-size-xxl) * var(--minimalist-typography-scale-mobile)
+  ); /* 61px */
+  --typography-size-small: calc(
+    var(--typography-size-default) / var(--minimalist-typography-scale-mobile)
+  ); /* 12px */
+  --typography-size-tiny: calc(
+    var(--typography-size-small) / var(--minimalist-typography-scale-mobile)
+  ); /* 9px */
 
   --typography-document-line-height: 1.75;
   --typography-code-example-line-height: 1.4;
@@ -180,11 +200,27 @@
 
 @media only screen and (width >= 63.9375rem) {
   :root {
-    --typography-size-display: 5.61rem; /* 90px */
-    --typography-size-xxl: 4.209rem; /* 67px */
-    --typography-size-xl: 3.157rem; /* 50px */
-    --typography-size-large: 2.369rem; /* 38px */
-    --typography-size-medium: 1.777rem; /* 28px */
-    --typography-size-small-medium: 1.333rem; /* 21px */
+    --minimalist-typography-scale-desktop: 1.33;
+
+    --typography-size-small-medium: calc(
+      var(--typography-size-default) *
+        var(--minimalist-typography-scale-desktop)
+    ); /* 21px */
+    --typography-size-medium: calc(
+      var(--typography-size-small-medium) *
+        var(--minimalist-typography-scale-desktop)
+    ); /* 28px */
+    --typography-size-large: calc(
+      var(--typography-size-medium) * var(--minimalist-typography-scale-desktop)
+    ); /* 38px */
+    --typography-size-xl: calc(
+      var(--typography-size-large) * var(--minimalist-typography-scale-desktop)
+    ); /* 50px */
+    --typography-size-xxl: calc(
+      var(--typography-size-xl) * var(--minimalist-typography-scale-desktop)
+    ); /* 67px */
+    --typography-size-display: calc(
+      var(--typography-size-xxl) * var(--minimalist-typography-scale-desktop)
+    ); /* 90px */
   }
 }
