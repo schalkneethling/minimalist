@@ -11,15 +11,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--typography-heading-family);
-  line-height: var(--typography-heading-line-height);
+  font-family: var(--minimalist-typography-heading-family);
+  line-height: var(--minimalist-typography-heading-line-height);
 }
 
 .text-medium,
 .text-small-medium,
 body {
-  font-family: var(--typography-body-family);
-  line-height: var(--typography-document-line-height);
+  font-family: var(--minimalist-typography-body-family);
+  line-height: var(--minimalist-typography-document-line-height);
 }
 
 .heading-display {
@@ -76,7 +76,7 @@ body {
 }
 
 code {
-  font-family: var(--typography-code-family);
+  font-family: var(--minimalist-typography-code-family);
   font-size: var(--typography-size-default);
-  line-height: var(--typography-code-example-line-height);
+  line-height: var(--minimalist-typography-code-example-line-height);
 }

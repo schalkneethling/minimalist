@@ -144,13 +144,13 @@
   --table-tfoot-padding-inline: var(--size-8);
 
   /* typography - https://systemfontstack.com */
-  --typography-heading-family: iowan old style, apple garamond, baskerville,
-    times new roman, droid serif, times, source serif pro, serif,
+  --minimalist-typography-heading-family: iowan old style, apple garamond,
+    baskerville, times new roman, droid serif, times, source serif pro, serif,
     apple color emoji, segoe ui emoji, segoe ui symbol;
-  --typography-body-family: -apple-system, blinkmacsystemfont, avenir next,
-    avenir, segoe ui, helvetica neue, helvetica, cantarell, ubuntu, roboto,
-    noto, arial, sans-serif;
-  --typography-code-family: menlo, consolas, monaco, liberation mono,
+  --minimalist-typography-body-family: -apple-system, blinkmacsystemfont,
+    avenir next, avenir, segoe ui, helvetica neue, helvetica, cantarell, ubuntu,
+    roboto, noto, arial, sans-serif;
+  --minimalist-typography-code-family: menlo, consolas, monaco, liberation mono,
     lucida console, monospace;
 
   --minimalist-typography-scale-mobile: 1.25;
@@ -183,12 +183,12 @@
     var(--typography-size-small) / var(--minimalist-typography-scale-mobile)
   ); /* 9px */
 
-  --typography-document-line-height: 1.75;
-  --typography-code-example-line-height: 1.4;
-  --typography-heading-line-height: 1.2;
+  --minimalist-typography-document-line-height: 1.75;
+  --minimalist-typography-code-example-line-height: 1.4;
+  --minimalist-typography-heading-line-height: 1.2;
 
   /* reduced line height for interactive elements */
-  --typography-interactive-line-height: 1.1;
+  --minimalist-typography-interactive-line-height: 1.1;
 
   /* z-index scale */
   --send-to-back: -1;
