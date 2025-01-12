@@ -2,15 +2,6 @@ fieldset {
   margin-block: var(--minimalist-fieldset-margin-block, var(--size-12));
 }
 
-.form-field {
-  display: grid;
-  gap: var(--minimalist-form-field-gap, var(--size-12));
-  margin-block-end: var(
-    --minimalist-form-field-margin-block-end,
-    var(--size-12)
-  );
-}
-
 input,
 select:not(.custom-select),
 textarea {
