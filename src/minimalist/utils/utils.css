@@ -3,6 +3,22 @@
 }
 
 /**
+ * A utility class used on a wrapper element such as a `div` to group two form elements
+ * commonly a label and an input.
+ * - Sets the display to grid.
+ * - Sets the a 0.75rem gap between the elements.
+ * - Sets the margin block end to 0.75rem.
+ */
+.form-field {
+  display: grid;
+  gap: var(--minimalist-form-field-gap, var(--size-12));
+  margin-block-end: var(
+    --minimalist-form-field-margin-block-end,
+    var(--size-12)
+  );
+}
+
+/**
  * CSS class to reset the default list styling.
  * - Removes bullet points or numbers from list items.
  * - Eliminates default margin and padding.
