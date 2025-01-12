@@ -26,28 +26,33 @@ body {
   font-size: var(--typography-size-display);
 }
 
-.heading-xxl,
-h1 {
+h1,
+h1.heading-xxl,
+.heading-xxl {
   font-size: var(--typography-size-xxl);
 }
 
-.heading-xl,
-h2 {
+h2,
+h2.heading-xl,
+.heading-xl {
   font-size: var(--typography-size-xl);
 }
 
-.heading-large,
-h3 {
+h3,
+h3.heading-large,
+.heading-large {
   font-size: var(--typography-size-large);
 }
 
-.heading-medium,
-h4 {
+h4,
+h4.heading-medium,
+.heading-medium {
   font-size: var(--typography-size-medium);
 }
 
-.heading-small-medium,
-h5 {
+h5,
+h5.heading-small-medium,
+.heading-small-medium {
   font-size: var(--typography-size-small-medium);
 }
 
