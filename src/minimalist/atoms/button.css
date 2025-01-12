@@ -17,11 +17,6 @@
   padding-inline: var(--minimalist-button-padding-inline, var(--size-16));
   text-decoration: none;
 
-  &:active {
-    margin-block-start: var(--size-1);
-    margin-inline-start: var(--size-1);
-  }
-
   &.rounded {
     border-radius: var(
       --minimalist-button-border-radius-default,
