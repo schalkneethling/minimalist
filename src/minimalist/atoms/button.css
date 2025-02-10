@@ -39,6 +39,17 @@
     );
   }
 
+  &.outline.critical {
+    border-color: var(
+      --minimalist-button-outline-critical-border-color,
+      var(--color-red-80)
+    );
+    color: var(
+      --minimalist-button-outline-critical-txt-color,
+      var(--color-red-90)
+    );
+  }
+
   &.solid {
     background-color: var(
       --minimalist-button-bg-color,
@@ -63,6 +74,30 @@
       border-color: var(
         --minimalist-button-solid-hover-border-color,
         var(--color-neutral-80)
+      );
+    }
+  }
+
+  &.solid.critical {
+    background-color: var(
+      --minimalist-button-critical-bg-color,
+      var(--color-red-90)
+    );
+    border-color: var(
+      --minimalist-button-critical-border-color,
+      var(--color-red-90)
+    );
+    color: var(--minimalist-button-critical-txt-color, var(--color-red-10));
+
+    &:focus,
+    &:hover {
+      background-color: var(
+        --minimalist-button-critical-hover-bg-color,
+        var(--color-red-80)
+      );
+      border-color: var(
+        --minimalist-button-critical-hover-border-color,
+        var(--color-red-80)
       );
     }
   }
